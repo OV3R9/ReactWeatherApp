@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+background-image: url(./assets/background.jpg);
+background-size: cover;
+}
+
+main {
+  height: 860px;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-areas:
+    "today stats stats stats"
+    "forecast_soon  stats stats stats"
+    "forecast_soon forecast_today forecast_today forecast_today";
+  gap: 20px;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 85%);
+}
+
+.searchBarContainer {
+  position: absolute;
+  top: 2%;
+  left: 40%;
+}
+
+.searchBar {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  width: 300px;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.searchBar:hover {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.searchBar:focus {
+  border: 2px solid rgb(255, 255, 255);
+}

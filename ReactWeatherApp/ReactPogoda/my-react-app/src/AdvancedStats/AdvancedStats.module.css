@@ -1,0 +1,103 @@
+.advStats {
+  position: relative;
+  grid-area: stats;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  transition: 0.5s all ease !important;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  cursor: default;
+  user-select: none;
+  text-wrap: nowrap;
+}
+
+.info {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 26px;
+  color: white;
+}
+
+.airQualityContainer {
+  overflow: visible;
+  position: relative;
+  margin-top: 50px;
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.containerInfo {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  font-size: 20px;
+  color: hsl(0, 0%, 70%);
+}
+
+.pollution {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  height: 80%;
+  width: 25%;
+  background-color: inherit;
+  transition: 0.5s all ease-out;
+  border-radius: 50px;
+}
+
+.pollution:hover {
+  background-color: white;
+  scale: 1.01;
+  color: black;
+}
+
+.aqi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  background-color: green;
+  height: 36px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.advancedStatsContainer {
+  overflow: visible;
+  position: relative;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  height: 45%;
+  width: 100%;
+}
+
+.stat {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  height: 86%;
+  width: 25%;
+  background-color: inherit;
+  transition: 0.5s all ease-out;
+  border-radius: 50px;
+}
+
+.stat:hover {
+  scale: 1.01;
+  background-color: white;
+  color: black;
+}

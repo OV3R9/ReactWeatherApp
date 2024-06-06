@@ -1,0 +1,29 @@
+.logoContainer {
+  margin-left: 10px;
+  overflow: visible;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.logoContainer:hover {
+  transform: scale(1.03);
+  text-shadow: 0px 0px 26px rgb(0, 0, 0);
+}
+
+.logoIcon {
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/MoonLight.png);
+}
+
+.logoName {
+  overflow: visible;
+  margin-left: 5px;
+  font-size: 32px;
+}

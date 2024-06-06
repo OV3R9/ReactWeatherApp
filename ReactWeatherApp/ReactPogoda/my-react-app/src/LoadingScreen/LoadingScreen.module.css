@@ -1,0 +1,38 @@
+.loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: rgb(0,67,128);
+background: linear-gradient(0deg, rgba(0,67,128,1) 0%, rgba(134,111,190,1) 31%, rgba(164,156,229,1) 100%);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: fadeAway 2s forwards ease-out;
+  cursor: none;
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.loading .logo-container {
+  width: 360px;
+}
+
+.loading .logo-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.loading .logo-name {
+  font-size: 50px;
+}

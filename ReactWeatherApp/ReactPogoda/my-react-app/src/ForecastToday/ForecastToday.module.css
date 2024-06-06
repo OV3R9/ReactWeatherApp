@@ -1,0 +1,55 @@
+.forecastToday {
+  position: relative;
+  grid-area: forecast_today;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  transition: 0.5s all ease !important;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  user-select: none;
+}
+
+.info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 26px;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 46px;
+  width: 16%;
+  height: 80%;
+  transition: 0.5s all ease;
+  border-radius: 10px;
+}
+
+.today:hover {
+  scale: 1.01;
+  color: black;
+  background-color: white;
+}
+
+.icon img {
+  width: 80px; 
+  height: 80px;
+  background-size: cover;
+}
+
+.hour {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.temp {
+  font-size: 26px;
+}
